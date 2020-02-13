@@ -4,3 +4,4 @@ deployment:
   - export DEPLOYPATH=/home/christian/blog.cleberg.io/
   - /bin/cp index.html $DEPLOYPATH
   - /bin/cp -R bin2dec $DEPLOYPATH
+  - /bin/cp -R localstorage $DEPLOYPATH

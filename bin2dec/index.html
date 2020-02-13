@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Bin2Dec | Sandbox Projects</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light text-center">
+    <a class="navbar-brand w-100" href="../">Sandbox Projects</a>
+  </nav>
+
+  <div class="container my-4 py-4">
+    <nav class="mb-5" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Binary to Decimal Converter</li>
+      </ol>
+    </nav>
+    <h1 class="text-center">Binary to Decimal Converter</h1>
+    <div class="card my-4">
+      <div class="card-body">
+        <form id="binaryForm">
+          <label for="binaryInput">Binary Input</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="binaryInput">
+            <div class="input-group-append">
+              <button class="btn btn-outline-primary" type="submit">Convert</button>
+            </div>
+            <div class="invalid-feedback">
+              Only enter the integers 0 or 1.
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="resultAlert" class="alert alert-success d-none" role="alert"></div>
+  </div>
+
+  <!-- JS -->
+  <script>
+    document.getElementById("binaryForm").addEventListener("submit", function(event) {
+      // Prevent the form from submitting, we want to stay on the same page
+      event.preventDefault();
+      // Get the input box and its value
+      var input = document.getElementById("binaryInput");
+      var inputValue = document.getElementById("binaryInput").value;
+      // Check to make sure the input is valid
+      var valid = checkInput();
+      // Perform conversion only if the input is valid
+      if (valid === true) {
+        // Get the decimal value
+        var decimal = convert(inputValue);
+        // Create a result alert
+        var resultAlert = document.getElementById("resultAlert");
+        resultAlert.classList.remove("d-none");
+        resultAlert.innerHTML = "<strong>Result:</strong> " + decimal;
+      }
+    });
+
+    function checkInput() {
+      var input = document.getElementById("binaryInput");
+      var inputValue = document.getElementById("binaryInput").value;
+      var result = true;
+      for (var i = 0; i < inputValue.length; i++) {
+        if (inputValue[i] == 0 || inputValue[i] == 1) {
+          result = true;
+        } else {
+          result = false;
+        }
+      }
+      if (result === false) {
+        input.classList.remove("is-valid");
+        input.classList.add("is-invalid");
+      } else {
+        input.classList.remove("is-invalid");
+        input.classList.add("is-valid");
+      }
+      return result;
+    }
+
+    function convert(bin) {
+      var decimal = 0;
+      for (var i = bin.length - 1; i >= 0; i--) {
+        decimal += parseInt(bin[i]) * Math.pow(2, bin.length - 1 - i)
+      }
+      return decimal;
+    }
+  </script>
+
+</body>
+
+</html>

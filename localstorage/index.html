@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Local Storage | Sandbox Projects</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light text-center">
+    <a class="navbar-brand w-100" href="../">Sandbox Projects</a>
+  </nav>
+
+  <div class="container my-4 py-4">
+    <nav class="mb-5" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Local Storage</li>
+      </ol>
+    </nav>
+    <h1 class="text-center">Local Storage</h1>
+
+    <!--Button Clicks-->
+    <div class="card my-4">
+      <div class="card-header">
+        Session & Local Storage: Button Counters
+      </div>
+      <div class="card-body">
+        <p>Click the counter button to see the counter increase. Close the browser tab (or window), and try again, and the counter is reset.</p>
+        <div class="d-flex mb-4">
+          <a href="#" class="btn btn-primary flex-fill mx-2" onclick="clickSessionCounter()">Session Counter</a>
+          <a href="#" class="btn btn-primary flex-fill mx-2" onclick="clickCounter()">Browser Counter</a>
+        </div>
+        <div class="alert alert-success">You have clicked the button <span id="result01">0</span> time(s) in this session.</div>
+        <div class="alert alert-success">You have clicked the button <span id="result02">0</span> time(s) in multiple sessions.</div>
+      </div>
+    </div><!-- ./button-clicks -->
+
+    <div class="card">
+      <div class="card-header">
+        Local Storage: Table Values
+      </div>
+      <div class="card-body">
+        <p class="lead">Simply enter your data and click <b>Submit</b> to save it in your browser's storage. This data will load whenever you open the page, until you save new values or clear your cookies.</p>
+        <hr>
+        <table id="dataTable" class="table table-bordered">
+          <thead>
+            <tr class="w3-light-grey">
+              <th>Column A</th>
+              <th>Column B</th>
+              <th>Column C</th>
+              <th>Column D</th>
+            </tr>
+          </thead>
+          <tr>
+            <td><input class="w-100" type="text" id="text01-01" name="text01-01" value="" /></td>
+            <td><input class="w-100" type="text" id="text01-02" name="text01-02" value="" /></td>
+            <td><input class="w-100" type="text" id="text01-03" name="text01-03" value="" /></td>
+            <td><input class="w-100" type="text" id="text01-04" name="text01-04" value="" /></td>
+          </tr>
+          <tr>
+            <td><input class="w-100" type="text" id="text02-01" name="text02-01" value="" /></td>
+            <td><input class="w-100" type="text" id="text02-02" name="text02-02" value="" /></td>
+            <td><input class="w-100" type="text" id="text02-03" name="text02-03" value="" /></td>
+            <td><input class="w-100" type="text" id="text02-04" name="text02-04" value="" /></td>
+          </tr>
+          <tr>
+            <td><input class="w-100" type="text" id="text03-01" name="text03-01" value="" /></td>
+            <td><input class="w-100" type="text" id="text03-02" name="text03-02" value="" /></td>
+            <td><input class="w-100" type="text" id="text03-03" name="text03-03" value="" /></td>
+            <td><input class="w-100" type="text" id="text03-04" name="text03-04" value="" /></td>
+          </tr>
+          <tr>
+            <td><input class="w-100" type="text" id="text04-01" name="text04-01" value="" /></td>
+            <td><input class="w-100" type="text" id="text04-02" name="text04-02" value="" /></td>
+            <td><input class="w-100" type="text" id="text04-03" name="text04-03" value="" /></td>
+            <td><input class="w-100" type="text" id="text04-04" name="text04-04" value="" /></td>
+          </tr>
+        </table>
+      </div>
+      <div class="card-footer">
+        <button id="submitButton" onclick="submission()" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+
+    <div class="card mt-4">
+      <div class="card-header">
+        Local Storage: Table Results
+      </div>
+      <div class="card-body">
+        <p class="lead">This table will load your saved data.</p>
+        <hr>
+        <!--Display Results-->
+        <table id="resultsTable" class="table table-bordered">
+          <tr>
+            <td id="display01-01"></td>
+            <td id="display01-02"></td>
+            <td id="display01-03"></td>
+            <td id="display01-04"></td>
+          </tr>
+          <tr>
+            <td id="display02-01"></td>
+            <td id="display02-02"></td>
+            <td id="display02-03"></td>
+            <td id="display02-04"></td>
+          </tr>
+          <tr>
+            <td id="display03-01"></td>
+            <td id="display03-02"></td>
+            <td id="display03-03"></td>
+            <td id="display03-04"></td>
+          </tr>
+          <tr>
+            <td id="display04-01"></td>
+            <td id="display04-02"></td>
+            <td id="display04-03"></td>
+            <td id="display04-04"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script>
+    window.onload = function() {
+      if (typeof(Storage) !== "undefined") {
+        document.getElementById("result01").innerHTML = sessionStorage.clickcount;
+        document.getElementById("result02").innerHTML = localStorage.clickcount;
+      }
+      storage();
+    }
+    // Session storage clicker
+    function clickSessionCounter() {
+      if (typeof(Storage) !== "undefined") {
+        if (sessionStorage.clickcount) {
+          sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+        } else {
+          sessionStorage.clickcount = 1;
+        }
+        document.getElementById("result01").innerHTML = sessionStorage.clickcount;
+      }
+    }
+    // Local storage clicker
+    function clickCounter() {
+      if (typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+          localStorage.clickcount = Number(localStorage.clickcount) + 1;
+        } else {
+          localStorage.clickcount = 1;
+        }
+        document.getElementById("result02").innerHTML = localStorage.clickcount;
+      }
+    }
+    // Function to submit input box data values into localStorage
+    function submission() {
+      if (typeof(Storage) !== "undefined") {
+        // Storing data:
+        localStorage.setItem("text01-01", document.getElementById("text01-01").value);
+        localStorage.setItem("text01-02", document.getElementById("text01-02").value);
+        localStorage.setItem("text01-03", document.getElementById("text01-03").value);
+        localStorage.setItem("text01-04", document.getElementById("text01-04").value);
+
+        localStorage.setItem("text02-01", document.getElementById("text02-01").value);
+        localStorage.setItem("text02-02", document.getElementById("text02-02").value);
+        localStorage.setItem("text02-03", document.getElementById("text02-03").value);
+        localStorage.setItem("text02-04", document.getElementById("text02-04").value);
+
+        localStorage.setItem("text03-01", document.getElementById("text03-01").value);
+        localStorage.setItem("text03-02", document.getElementById("text03-02").value);
+        localStorage.setItem("text03-03", document.getElementById("text03-03").value);
+        localStorage.setItem("text03-04", document.getElementById("text03-04").value);
+
+        localStorage.setItem("text04-01", document.getElementById("text04-01").value);
+        localStorage.setItem("text04-02", document.getElementById("text04-02").value);
+        localStorage.setItem("text04-03", document.getElementById("text04-03").value);
+        localStorage.setItem("text04-04", document.getElementById("text04-04").value);
+
+        // Update the results table as soon as the values are stored
+        storage();
+
+      }
+    }
+    // Function to get input box data values from localStorage and display them in the table
+    function storage() {
+      if (typeof(Storage) !== "undefined") {
+        //Retrieving data:
+        document.getElementById("display01-01").innerHTML = localStorage.getItem("text01-01");
+        document.getElementById("display01-02").innerHTML = localStorage.getItem("text01-02");
+        document.getElementById("display01-03").innerHTML = localStorage.getItem("text01-03");
+        document.getElementById("display01-04").innerHTML = localStorage.getItem("text01-04");
+
+        document.getElementById("display02-01").innerHTML = localStorage.getItem("text02-01");
+        document.getElementById("display02-02").innerHTML = localStorage.getItem("text02-02");
+        document.getElementById("display02-03").innerHTML = localStorage.getItem("text02-03");
+        document.getElementById("display02-04").innerHTML = localStorage.getItem("text02-04");
+
+        document.getElementById("display03-01").innerHTML = localStorage.getItem("text03-01");
+        document.getElementById("display03-02").innerHTML = localStorage.getItem("text03-02");
+        document.getElementById("display03-03").innerHTML = localStorage.getItem("text03-03");
+        document.getElementById("display03-04").innerHTML = localStorage.getItem("text03-04");
+
+        document.getElementById("display04-01").innerHTML = localStorage.getItem("text04-01");
+        document.getElementById("display04-02").innerHTML = localStorage.getItem("text04-02");
+        document.getElementById("display04-03").innerHTML = localStorage.getItem("text04-03");
+        document.getElementById("display04-04").innerHTML = localStorage.getItem("text04-04");
+
+      }
+    }
+  </script>
+
+</body>
+
+</html>
