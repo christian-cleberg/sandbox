@@ -7,10 +7,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <title>Local Storage | Sandbox Projects</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: white
+    }
+
+    .card-header {
+      background-color: #202020
+    }
+
+    .card,
+    .navbar,
+    .breadcrumb,
+    .table {
+      background-color: #3b3b3b;
+      border: none;
+      color: white
+    }
+
+    .form-control {
+      background-color: #202020;
+      color: white;
+      border: none
+    }
+
+    .form-control:focus {
+      background-color: #202020;
+      color: white;
+      border-color: #dc3545;
+      outline: 0;
+      box-shadow: 0 0 0 .2rem rgba(220, 53, 69, .25);
+    }
+
+    .breadcrumb a {
+      color: #dc3545
+    }
+  </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light text-center">
+  <nav class="navbar navbar-expand-lg navbar-dark text-center">
     <a class="navbar-brand w-100" href="../">Sandbox Projects</a>
   </nav>
 
@@ -31,8 +68,8 @@
       <div class="card-body">
         <p>Click the counter button to see the counter increase. Close the browser tab (or window), and try again, and the counter is reset.</p>
         <div class="d-flex mb-4">
-          <a href="#" class="btn btn-primary flex-fill mx-2" onclick="clickSessionCounter()">Session Counter</a>
-          <a href="#" class="btn btn-primary flex-fill mx-2" onclick="clickCounter()">Browser Counter</a>
+          <a href="#" class="btn btn-danger flex-fill mx-2" onclick="clickSessionCounter()">Session Counter</a>
+          <a href="#" class="btn btn-danger flex-fill mx-2" onclick="clickCounter()">Browser Counter</a>
         </div>
         <div class="alert alert-success">You have clicked the button <span id="result01">0</span> time(s) in this session.</div>
         <div class="alert alert-success">You have clicked the button <span id="result02">0</span> time(s) in multiple sessions.</div>
@@ -48,7 +85,7 @@
         <hr>
         <table id="dataTable" class="table table-bordered">
           <thead>
-            <tr class="w3-light-grey">
+            <tr class="text-center">
               <th>Column A</th>
               <th>Column B</th>
               <th>Column C</th>
@@ -56,33 +93,33 @@
             </tr>
           </thead>
           <tr>
-            <td><input class="w-100" type="text" id="text01-01" name="text01-01" value="" /></td>
-            <td><input class="w-100" type="text" id="text01-02" name="text01-02" value="" /></td>
-            <td><input class="w-100" type="text" id="text01-03" name="text01-03" value="" /></td>
-            <td><input class="w-100" type="text" id="text01-04" name="text01-04" value="" /></td>
+            <td><input class="w-100 form-control" type="text" id="text01-01" name="text01-01" value="" /></td>
+            <td><input class="w-100 form-control" type="text" id="text01-02" name="text01-02" value="" /></td>
+            <td><input class="w-100 form-control" type="text" id="text01-03" name="text01-03" value="" /></td>
+            <td><input class="w-100 form-control" type="text" id="text01-04" name="text01-04" value="" /></td>
           </tr>
           <tr>
-            <td><input class="w-100" type="text" id="text02-01" name="text02-01" value="" /></td>
-            <td><input class="w-100" type="text" id="text02-02" name="text02-02" value="" /></td>
-            <td><input class="w-100" type="text" id="text02-03" name="text02-03" value="" /></td>
-            <td><input class="w-100" type="text" id="text02-04" name="text02-04" value="" /></td>
+            <td><input class="w-100 form-control" type="text" id="text02-01" name="text02-01" value="" /></td>
+            <td><input class="w-100 form-control" type="text" id="text02-02" name="text02-02" value="" /></td>
+            <td><input class="w-100 form-control" type="text" id="text02-03" name="text02-03" value="" /></td>
+            <td><input class="w-100 form-control" type="text" id="text02-04" name="text02-04" value="" /></td>
           </tr>
           <tr>
-            <td><input class="w-100" type="text" id="text03-01" name="text03-01" value="" /></td>
-            <td><input class="w-100" type="text" id="text03-02" name="text03-02" value="" /></td>
-            <td><input class="w-100" type="text" id="text03-03" name="text03-03" value="" /></td>
-            <td><input class="w-100" type="text" id="text03-04" name="text03-04" value="" /></td>
+            <td><input class="w-100 form-control" type="text" id="text03-01" name="text03-01" value="" /></td>
+            <td><input class="w-100 form-control" type="text" id="text03-02" name="text03-02" value="" /></td>
+            <td><input class="w-100 form-control" type="text" id="text03-03" name="text03-03" value="" /></td>
+            <td><input class="w-100 form-control" type="text" id="text03-04" name="text03-04" value="" /></td>
           </tr>
           <tr>
-            <td><input class="w-100" type="text" id="text04-01" name="text04-01" value="" /></td>
-            <td><input class="w-100" type="text" id="text04-02" name="text04-02" value="" /></td>
-            <td><input class="w-100" type="text" id="text04-03" name="text04-03" value="" /></td>
-            <td><input class="w-100" type="text" id="text04-04" name="text04-04" value="" /></td>
+            <td><input class="w-100 form-control" type="text" id="text04-01" name="text04-01" value="" /></td>
+            <td><input class="w-100 form-control" type="text" id="text04-02" name="text04-02" value="" /></td>
+            <td><input class="w-100 form-control" type="text" id="text04-03" name="text04-03" value="" /></td>
+            <td><input class="w-100 form-control" type="text" id="text04-04" name="text04-04" value="" /></td>
           </tr>
         </table>
       </div>
-      <div class="card-footer">
-        <button id="submitButton" onclick="submission()" class="btn btn-primary">Submit</button>
+      <div class="card-footer text-center">
+        <button id="submitButton" onclick="submission()" class="btn btn-danger">Submit</button>
       </div>
     </div>
 
@@ -95,6 +132,14 @@
         <hr>
         <!--Display Results-->
         <table id="resultsTable" class="table table-bordered">
+          <thead>
+            <tr class="text-center">
+              <th>Column A</th>
+              <th>Column B</th>
+              <th>Column C</th>
+              <th>Column D</th>
+            </tr>
+          </thead>
           <tr>
             <td id="display01-01"></td>
             <td id="display01-02"></td>
