@@ -4,5 +4,8 @@ deployment:
   - export DEPLOYPATH=/home/christian/sandbox.cleberg.io/
   - /bin/cp index.html $DEPLOYPATH
   - /bin/cp -R binarytodecimal $DEPLOYPATH
-  - /bin/cp -R localstorage $DEPLOYPATH
+  - /bin/cp -R coordinatedistances $DEPLOYPATH
   - /bin/cp -R currencyconverter $DEPLOYPATH
+  - /bin/cp -R futurevalue $DEPLOYPATH
+  - /bin/cp -R guessinggame $DEPLOYPATH
+  - /bin/cp -R localstorage $DEPLOYPATH
