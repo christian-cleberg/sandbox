@@ -173,8 +173,14 @@
   <script>
     window.onload = function() {
       if (typeof(Storage) !== "undefined") {
-        document.getElementById("result01").innerHTML = sessionStorage.clickcount;
-        document.getElementById("result02").innerHTML = localStorage.clickcount;
+        if (sessionStorage.clickcount === undefined) {
+          document.getElementById("result01").innerHTML = "0";
+        } else if (localStorage.clickcount === undefined) {
+          document.getElementById("result02").innerHTML = "0";
+        } else {
+          document.getElementById("result01").innerHTML = sessionStorage.clickcount;
+          document.getElementById("result02").innerHTML = localStorage.clickcount;
+        }
       }
       storage();
     }
