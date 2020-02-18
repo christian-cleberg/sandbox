@@ -9,4 +9,3 @@ deployment:
   - /bin/cp -R futurevalue $DEPLOYPATH
   - /bin/cp -R guessinggame $DEPLOYPATH
   - /bin/cp -R localstorage $DEPLOYPATH
-  - /bin/cp -R php-photos $DEPLOYPATH
