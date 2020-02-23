@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <title>Future Value | Sandbox Projects</title>
   <style>
     body {
@@ -70,7 +71,8 @@
     <div class="card mt-4">
       <header class="card-header">Future Value</header>
       <div class="card-body">
-        <p>This program will help you figure out the future value of an investment. (Example: 8.995% APR would be entered as 0.08995)</p>
+        <p>This program will help you figure out the future value of an investment. (Example: 8.995% APR would be
+          entered as 0.08995)</p>
         <div id="errMsgArea"></div>
         <form id="futureValueForm" class="form" onsubmit="futureValue()">
           <div class="form-row">
@@ -99,6 +101,23 @@
             </div>
           </div>
 
+          <div style="margin:5px">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="interestRadios" id="simpleInterestRadio" value="simple"
+                checked>
+              <label class="form-check-label" for="simpleInterestRadio">
+                Simple Interest
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="interestRadios" id="compoundInterestRadio"
+                value="compound">
+              <label class="form-check-label" for="compoundInterestRadio">
+                Compound Interest
+              </label>
+            </div>
+          </div>
+
           <div class="form-row" style="margin:5px">
             <button id="button" onclick="futureValue()" type="submit" class="btn btn-danger">Begin</button>
           </div>
@@ -110,21 +129,26 @@
 
   <!-- JS -->
   <script>
-    window.onload = function() {
-      document.getElementById('futureValueForm').addEventListener('submit', function(event) {
+    window.onload = function () {
+      document.getElementById('futureValueForm').addEventListener('submit', function (event) {
         event.preventDefault();
         futureValue();
       });
     }
+
     // Future value of an investment
     function futureValue() {
       const investment = parseFloat(document.getElementById('investment').value);
       const apr = parseFloat(document.getElementById('apr').value);
       const yearsAccrued = parseFloat(document.getElementById('yearsAccrued').value);
       const n = 12;
-      var z = investment * Math.pow((1 + (apr / n)), (n * yearsAccrued));
+      const interestType = document.querySelector('input[type="radio"]:checked').value;
+      if (interestType === "simple") {
+        var z = investment * (1 + (apr * yearsAccrued));
+      } else {
+        var z = investment * Math.pow((1 + apr), yearsAccrued);
+      }
       z = z.toFixed(2);
-
       if (isNaN(investment) ||
         isNaN(apr) ||
         isNaN(yearsAccrued)) {
@@ -133,6 +157,7 @@
         document.getElementById('futureValue').value = formatMoney(z);
       }
     }
+
     // Format money with commas
     function formatMoney(amount, decimalCount = 2, decimal = ".", thousands = ",") {
       try {
@@ -141,11 +166,12 @@
         const negativeSign = amount < 0 ? "-" : "";
         let i = parseInt(amount = Math.abs(Number(amount) || 0).toFixed(decimalCount)).toString();
         let j = (i.length > 3) ? i.length % 3 : 0;
-        return negativeSign + (j ? i.substr(0, j) + thousands : '') + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + thousands) + (decimalCount ? decimal + Math.abs(amount - i).toFixed(decimalCount).slice(2) : "");
+        return negativeSign + (j ? i.substr(0, j) + thousands : '') + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" +
+          thousands) + (decimalCount ? decimal + Math.abs(amount - i).toFixed(decimalCount).slice(2) : "");
       } catch (e) {
-        console.log(e)
+        console.log(e);
       }
-    };
+    }
   </script>
 
 </body>
