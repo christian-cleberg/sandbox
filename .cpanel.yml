@@ -3,6 +3,9 @@ deployment:
  tasks:
   - export DEPLOYPATH=/home/christian/sandbox.cleberg.io/
   - /bin/cp index.html $DEPLOYPATH
+  - /bin/cp browserconfig.xml $DEPLOYPATH
+  - /bin/cp manifest.json $DEPLOYPATH
+  - /bin/cp -R favicon $DEPLOYPATH
   - /bin/cp -R binarytodecimal $DEPLOYPATH
   - /bin/cp -R coordinatedistances $DEPLOYPATH
   - /bin/cp -R currencyconverter $DEPLOYPATH
