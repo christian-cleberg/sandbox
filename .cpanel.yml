@@ -15,3 +15,4 @@ deployment:
   - /bin/cp -R localstorage $DEPLOYPATH
   - /bin/cp -R minimal-wiki $DEPLOYPATH
   - /bin/cp -R retro-newspaper $DEPLOYPATH
+  - /bin/cp -R php-photos $DEPLOYPATH
