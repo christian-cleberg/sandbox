@@ -41,6 +41,14 @@
         .card {
             margin-bottom: 1rem
         }
+
+        .jumbotron {
+            background-color: #3b3b3b;
+        }
+
+        .jumbotron hr {
+            border-color: #5b5b5b;
+        }
     </style>
 </head>
 
@@ -50,9 +58,27 @@
     </nav>
 
     <div class="container my-4 py-4">
-        <h1 class="text-center my-4">Intermediate</h1>
+        <div class="jumbotron">
+            <h1 class="display-4">Sandbox Web Projects</h1>
+            <p class="lead">This website contains a collection of open-source, easy-to-make web apps.</p>
+            <hr class="my-4">
+            <p>Feel free to use or copy any code by browsing or cloning the source code git repository.</p>
+            <a class="btn btn-danger btn-lg" href="https://gitlab.com/christian-cleberg/sandbox" role="button">View Source Code</a>
+        </div>
+
+        <h2 class="text-center my-4">Intermediate</h2>
 
         <div class="row mb-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Mapbox GL JS</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Intermediate</h6>
+                        <p class="card-text">Create custom maps with numerous controls and modifications.</p>
+                        <a href="mapbox/" class="btn btn-outline-danger w-100">Go &rarr;</a>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-body">
@@ -73,6 +99,9 @@
                     </div>
                 </div>
             </div>
+        </div><!-- ./row -->
+
+        <div class="row mb-4">
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-body">
@@ -85,7 +114,7 @@
             </div>
         </div><!-- ./row -->
 
-        <h1 class="text-center my-4">Beginner</h1>
+        <h2 class="text-center my-4">Beginner</h2>
         <div class="row mb-4">
             <div class="col-md-4">
                 <div class="card">
