@@ -48,7 +48,7 @@
                 <a class="nav-link" href="./"><i class="fas fa-home mr-2"></i>Home</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="https://gitlab.com/christian-cleberg/sandbox"><i class="fab fa-gitlab mr-2"></i>Source Code</a>
+                <a class="nav-link" href="https://github.com/christian-cleberg/sandbox"><i class="fab fa-github mr-2"></i>Source Code</a>
               </li>
             </ul>
           </div>
