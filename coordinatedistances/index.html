@@ -2,173 +2,178 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Sandbox is a showcase of web apps built as a form of personal education/training by Christian Cleberg.">
-  <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="../favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
-  <link rel="manifest" href="../manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="../favicon/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <title>Coordinate Distances | Sandbox Projects</title>
-  <style>
-    body {
-      background-color: #121212;
-      color: white
-    }
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+          content="Sandbox is a showcase of web apps built as a form of personal education/training by Christian Cleberg.">
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Coordinate Distances | Sandbox Projects</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: white
+        }
 
-    .card-header {
-      background-color: #202020
-    }
+        .card-header {
+            background-color: #202020
+        }
 
-    .card,
-    .navbar,
-    .breadcrumb,
-    .table {
-      background-color: #3b3b3b;
-      border: none;
-      color: white
-    }
+        .card,
+        .navbar,
+        .breadcrumb,
+        .table {
+            background-color: #3b3b3b;
+            border: none;
+            color: white
+        }
 
-    .form-control,
-    .form-control:disabled {
-      background-color: #202020;
-      color: white;
-      border: none
-    }
+        .form-control,
+        .form-control:disabled {
+            background-color: #202020;
+            color: white;
+            border: none
+        }
 
-    .form-control:focus {
-      background-color: #202020;
-      color: white;
-      border-color: #dc3545;
-      outline: 0;
-      box-shadow: 0 0 0 .2rem rgba(220, 53, 69, .25);
-    }
+        .form-control:focus {
+            background-color: #202020;
+            color: white;
+            border-color: #dc3545;
+            outline: 0;
+            box-shadow: 0 0 0 .2rem rgba(220, 53, 69, .25);
+        }
 
-    .breadcrumb a {
-      color: #dc3545
-    }
-  </style>
+        .breadcrumb a {
+            color: #dc3545
+        }
+    </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark text-center">
+<nav class="navbar navbar-expand-lg navbar-dark text-center">
     <a class="navbar-brand w-100" href="../">Sandbox Projects</a>
-  </nav>
+</nav>
 
-  <div class="container my-4 py-4">
+<div class="container my-4 py-4">
     <nav class="mb-5" aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="../">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Coordinate Distances</li>
-      </ol>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Coordinate Distances</li>
+        </ol>
     </nav>
     <h1 class="text-center">Coordinate Distances</h1>
-    <a href="https://git.sr.ht/~cyborg/sandbox" class="h5 d-block text-center" style="color:white;text-decoration:underline;">View Source Code</a>
+    <a href="https://git.sr.ht/~cyborg/sandbox" class="h5 d-block text-center"
+       style="color:white;text-decoration:underline;">View Source Code</a>
 
     <div class="card mt-4">
-      <header class="card-header">Distance Calculator</header>
-      <div class="card-body">
-        <p>Find the distance between two locations. Enter
-          latitude and longitude of each location and hit calculate!
-          <br>Remember: Southern and Western coordinates are indicated with a minus (-) sign!
-        </p>
-        <div id="errMsgArea" class="alert alert-danger d-none">Error! One or more of the numbers you entered contained a non-numeric value! Please only enter valid numbers.</div>
-        <div class="form">
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="originLatitude">Latitude of Location 1</label>
-              <input type="text" class="form-control" id="originLatitude" value="00.00">
+        <header class="card-header">Distance Calculator</header>
+        <div class="card-body">
+            <p>Find the distance between two locations. Enter
+                latitude and longitude of each location and hit calculate!
+                <br>Remember: Southern and Western coordinates are indicated with a minus (-) sign!
+            </p>
+            <div id="errMsgArea" class="alert alert-danger d-none">Error! One or more of the numbers you entered
+                contained a non-numeric value! Please only enter valid numbers.
             </div>
-            <div class="form-group col-md-6">
-              <label for="originLongitude">Longitude of Location 1</label>
-              <input type="text" class="form-control" id="originLongitude" value="00.00">
+            <div class="form">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="originLatitude">Latitude of Location 1</label>
+                        <input type="text" class="form-control" id="originLatitude" value="00.00">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="originLongitude">Longitude of Location 1</label>
+                        <input type="text" class="form-control" id="originLongitude" value="00.00">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="destinationLatitude">Latitude of Location 2</label>
+                        <input type="text" class="form-control" id="destinationLatitude" value="00.00">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="destinationLongitude">Longitude of Location 2</label>
+                        <input type="text" class="form-control" id="destinationLongitude" value="00.00">
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="destinationLatitude">Latitude of Location 2</label>
-              <input type="text" class="form-control" id="destinationLatitude" value="00.00">
-            </div>
-            <div class="form-group col-md-6">
-              <label for="destinationLongitude">Longitude of Location 2</label>
-              <input type="text" class="form-control" id="destinationLongitude" value="00.00">
-            </div>
-          </div>
         </div>
-      </div>
     </div>
 
     <div class="card mt-4">
-      <div class="card-header">Results</div>
-      <div class="card-body">
-        <div class="form">
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="destinationLatitude">Kilometers:</label>
-              <input type="text" class="form-control" id="outputDistanceKm" value="" disabled>
+        <div class="card-header">Results</div>
+        <div class="card-body">
+            <div class="form">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="destinationLatitude">Kilometers:</label>
+                        <input type="text" class="form-control" id="outputDistanceKm" value="" disabled>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="destinationLatitude">Miles:</label>
+                        <input type="text" class="form-control" id="outputDistanceMi" value="" disabled>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <button id="button" onclick="calcDistance()" class="btn btn-danger w-100">Begin</button>
+                    </div>
+                </div>
             </div>
-            <div class="form-group col-md-6">
-              <label for="destinationLatitude">Miles:</label>
-              <input type="text" class="form-control" id="outputDistanceMi" value="" disabled>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-12">
-              <button id="button" onclick="calcDistance()" class="btn btn-danger w-100">Begin</button>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
 
-  </div>
+</div>
 
-  <!-- JS -->
-  <script>
+<!-- JS -->
+<script>
     // Distance calculator
     function calcDistance() {
-      const originLatitude = parseFloat(document.getElementById('originLatitude').value);
-      const originLongitude = parseFloat(document.getElementById('originLongitude').value);
-      const destinationLatitude = parseFloat(document.getElementById('destinationLatitude').value);
-      const destinationLongitude = parseFloat(document.getElementById('destinationLongitude').value);
-      // Check for errors
-      if (isNaN(originLatitude) || isNaN(originLongitude) || isNaN(destinationLatitude) || isNaN(destinationLongitude)) {
-        document.getElementById('errMsgArea').classList.remove("d-none");
-      } else {
-        document.getElementById('errMsgArea').classList.add("d-none");
-        var c = originLatitude * Math.PI / 180;
-        var d = originLongitude * Math.PI / 180;
-        var e = destinationLatitude * Math.PI / 180;
-        var f = destinationLongitude * Math.PI / 180;
-        var r = 6371;
-        var g = Math.acos(Math.sin(c) * Math.sin(e) + Math.cos(c) * Math.cos(e) * Math.cos(f - d)) * r;
-        var h = g.toFixed(2);
-        var x = (h * 0.62137);
-        var y = x.toFixed(2);
-        sessionStorage.setItem("kilos", h);
-        document.getElementById('outputDistanceKm').value = h + " kilometers";
-        // Get miles
-        var m = (h * 0.62137);
-        var n = m.toFixed(2);
-        document.getElementById('outputDistanceMi').value = n + " miles";
-      }
+        const originLatitude = parseFloat(document.getElementById('originLatitude').value);
+        const originLongitude = parseFloat(document.getElementById('originLongitude').value);
+        const destinationLatitude = parseFloat(document.getElementById('destinationLatitude').value);
+        const destinationLongitude = parseFloat(document.getElementById('destinationLongitude').value);
+        // Check for errors
+        if (isNaN(originLatitude) || isNaN(originLongitude) || isNaN(destinationLatitude) || isNaN(destinationLongitude)) {
+            document.getElementById('errMsgArea').classList.remove("d-none");
+        } else {
+            document.getElementById('errMsgArea').classList.add("d-none");
+            var c = originLatitude * Math.PI / 180;
+            var d = originLongitude * Math.PI / 180;
+            var e = destinationLatitude * Math.PI / 180;
+            var f = destinationLongitude * Math.PI / 180;
+            var r = 6371;
+            var g = Math.acos(Math.sin(c) * Math.sin(e) + Math.cos(c) * Math.cos(e) * Math.cos(f - d)) * r;
+            var h = g.toFixed(2);
+            var x = (h * 0.62137);
+            var y = x.toFixed(2);
+            sessionStorage.setItem("kilos", h);
+            document.getElementById('outputDistanceKm').value = h + " kilometers";
+            // Get miles
+            var m = (h * 0.62137);
+            var n = m.toFixed(2);
+            document.getElementById('outputDistanceMi').value = n + " miles";
+        }
     }
-  </script>
+</script>
 
 </body>
 

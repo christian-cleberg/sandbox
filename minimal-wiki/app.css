@@ -1,140 +1,140 @@
 ::-moz-selection {
-  background: RGB(204, 0, 0);
-  background: RGBA(204, 0, 0, 0.5);
-  color: white
+    background: RGB(204, 0, 0);
+    background: RGBA(204, 0, 0, 0.5);
+    color: white
 }
 
 ::selection {
-  background: RGB(204, 0, 0);
-  background: RGBA(204, 0, 0, 0.5);
-  color: white
+    background: RGB(204, 0, 0);
+    background: RGBA(204, 0, 0, 0.5);
+    color: white
 }
 
 body {
-  color: #333;
-  font-family: 'Open Sans', sans-serif
+    color: #333;
+    font-family: 'Open Sans', sans-serif
 }
 
 h1, h2, h3, h4, .footer-brand {
-  color: #111;
-  font-family: 'Rufina', serif
+    color: #111;
+    font-family: 'Rufina', serif
 }
 
 a:focus, button:focus {
-  outline: none
+    outline: none
 }
 
 .navbar {
-  border-bottom: 1px solid #aaa
+    border-bottom: 1px solid #aaa
 }
 
 .navbar-brand span {
-  color: #cc0000
+    color: #cc0000
 }
 
 .navbar-toggler {
-  border: none
+    border: none
 }
 
 .breadcrumb {
-  background: white;
-  border: 1px solid #aaa;
-  border-radius: 0;
-  margin-top: 4rem
+    background: white;
+    border: 1px solid #aaa;
+    border-radius: 0;
+    margin-top: 4rem
 }
 
 .breadcrumb-item a {
-  color: #cc0000
+    color: #cc0000
 }
 
 .page-title {
-  margin-bottom: 0
+    margin-bottom: 0
 }
 
 .page-subtitle {
-  color: #aaa;
-  margin: 0;
-  margin-bottom: 4rem
+    color: #aaa;
+    margin: 0;
+    margin-bottom: 4rem
 }
 
 .section-title {
-  margin-top: 4rem
+    margin-top: 4rem
 }
 
 .main-content {
-  margin-top: 4rem
+    margin-top: 4rem
 }
 
 .main-content hr {
-  margin-left: 0;
-  width: 98%
+    margin-left: 0;
+    width: 98%
 }
 
 .explore-cards {
-  background: #eee;
-  margin-top: 4rem;
-  padding: 2rem
+    background: #eee;
+    margin-top: 4rem;
+    padding: 2rem
 }
 
 .explore-cards .col-md-4 {
-  margin-bottom: 2rem
+    margin-bottom: 2rem
 }
 
 .card {
-  border-radius: 0
+    border-radius: 0
 }
 
 .card-link {
-  border-bottom: 1px solid #111;
-  color: #111;
-  transition: 0.3s ease
+    border-bottom: 1px solid #111;
+    color: #111;
+    transition: 0.3s ease
 }
 
 .card-link:hover {
-  border-bottom: 1px solid #cc0000;
-  color: #cc0000;
-  text-decoration: none
+    border-bottom: 1px solid #cc0000;
+    color: #cc0000;
+    text-decoration: none
 }
 
 .card-subtitle.text-uppercase {
-  color: #cc0000;
-  font-size: 0.75rem
+    color: #cc0000;
+    font-size: 0.75rem
 }
 
 footer {
-  margin-bottom: 4rem;
-  margin-top: 4rem;
-  padding: 2rem 1.5rem
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    padding: 2rem 1.5rem
 }
 
 .footer-brand {
-  color: #111;
-  font-size: 1.5rem;
-  font-weight: 700
+    color: #111;
+    font-size: 1.5rem;
+    font-weight: 700
 }
 
 .footer-brand:hover {
-  color: #111;
-  text-decoration: none
+    color: #111;
+    text-decoration: none
 }
 
 .footer-brand span {
-  color: #cc0000
+    color: #cc0000
 }
 
 .footer-heading {
-  color: #111;
-  font-weight: bold;
-  margin: 0;
-  margin-bottom: 0.25rem
+    color: #111;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 0.25rem
 }
 
 .footer-link {
-  color: #333;
-  display: block
+    color: #333;
+    display: block
 }
 
 .footer-link:hover {
-  color: #111;
-  text-decoration: none
+    color: #111;
+    text-decoration: none
 }

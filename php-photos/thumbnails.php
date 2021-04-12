@@ -2,16 +2,16 @@
 $image_dir = "images/";
 $img = $_GET['image'];
 $size = 900;
-if($img) {
-    $image = imagecreatefromjpeg($image_dir."/".$img);
-    $width  = imagesx($image);
+if ($img) {
+    $image = imagecreatefromjpeg($image_dir . "/" . $img);
+    $width = imagesx($image);
     $height = imagesy($image);
-    
+
     $thumb_height = $size;
-    $thumb_width  = $size;
-    
+    $thumb_width = $size;
+
     $ratio_original = $width / $height;
-    
+
     if ($height > $width) {
         $thumb_height = ($thumb_width * $height) / $width;
     } else if ($height < $width) {

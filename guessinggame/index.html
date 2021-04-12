@@ -2,183 +2,188 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Sandbox is a showcase of web apps built as a form of personal education/training by Christian Cleberg.">
-  <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="../favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
-  <link rel="manifest" href="../manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="../favicon/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <title>Guessing Game | Sandbox Projects</title>
-  <style>
-    body {
-      background-color: #121212;
-      color: white
-    }
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+          content="Sandbox is a showcase of web apps built as a form of personal education/training by Christian Cleberg.">
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Guessing Game | Sandbox Projects</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: white
+        }
 
-    .card-header {
-      background-color: #202020
-    }
+        .card-header {
+            background-color: #202020
+        }
 
-    .card,
-    .navbar,
-    .breadcrumb,
-    .table {
-      background-color: #3b3b3b;
-      border: none;
-      color: white
-    }
+        .card,
+        .navbar,
+        .breadcrumb,
+        .table {
+            background-color: #3b3b3b;
+            border: none;
+            color: white
+        }
 
-    .form-control,
-    .form-control:disabled {
-      background-color: #202020;
-      color: white;
-      border: none
-    }
+        .form-control,
+        .form-control:disabled {
+            background-color: #202020;
+            color: white;
+            border: none
+        }
 
-    .form-control:focus {
-      background-color: #202020;
-      color: white;
-      border-color: #dc3545;
-      outline: 0;
-      box-shadow: 0 0 0 .2rem rgba(220, 53, 69, .25);
-    }
+        .form-control:focus {
+            background-color: #202020;
+            color: white;
+            border-color: #dc3545;
+            outline: 0;
+            box-shadow: 0 0 0 .2rem rgba(220, 53, 69, .25);
+        }
 
-    .breadcrumb a {
-      color: #dc3545
-    }
-  </style>
+        .breadcrumb a {
+            color: #dc3545
+        }
+    </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark text-center">
+<nav class="navbar navbar-expand-lg navbar-dark text-center">
     <a class="navbar-brand w-100" href="../">Sandbox Projects</a>
-  </nav>
+</nav>
 
-  <div class="container my-4 py-4">
+<div class="container my-4 py-4">
     <nav class="mb-5" aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="../">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Guessing Game</li>
-      </ol>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Guessing Game</li>
+        </ol>
     </nav>
     <h1 class="text-center">Guessing Game</h1>
-    <a href="https://git.sr.ht/~cyborg/sandbox" class="h5 d-block text-center" style="color:white;text-decoration:underline;">View Source Code</a>
+    <a href="https://git.sr.ht/~cyborg/sandbox" class="h5 d-block text-center"
+       style="color:white;text-decoration:underline;">View Source Code</a>
 
     <div class="card mt-4">
-      <header class="card-header">Guessing Game</header>
-      <div class="card-body">
-        <p>The computer will generate a number 1-100 and ask you to guess it!</p>
-        <div id="successErrMsgArea" class="alert alert-success d-none"></div>
-        <div id="errMsgArea" class="alert alert-danger d-none"></div>
-        <form id="guessingForm" class="form">
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="guess">Your Guess:</label>
-              <input type="text" class="form-control" id="guess" value="0" onfocus="this.select()" autofocus>
-            </div>
-            <div class="form-group col-md-6">
-              <label for="lastAttempt">Last Attempt:</label>
-              <input type="text" class="form-control" id="lastAttempt" value="0" disabled>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-12">
-              <button id="button" type="submit" class="btn btn-danger w-100">Guess</button>
-            </div>
-          </div>
-        </form>
-      </div>
+        <header class="card-header">Guessing Game</header>
+        <div class="card-body">
+            <p>The computer will generate a number 1-100 and ask you to guess it!</p>
+            <div id="successErrMsgArea" class="alert alert-success d-none"></div>
+            <div id="errMsgArea" class="alert alert-danger d-none"></div>
+            <form id="guessingForm" class="form">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="guess">Your Guess:</label>
+                        <input type="text" class="form-control" id="guess" value="0" onfocus="this.select()" autofocus>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="lastAttempt">Last Attempt:</label>
+                        <input type="text" class="form-control" id="lastAttempt" value="0" disabled>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <button id="button" type="submit" class="btn btn-danger w-100">Guess</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 
     <div class="card mt-4">
-      <header class="card-header">Results</header>
-      <div class="card-body">
-        <form class="form">
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="answer">Mystery Number:</label>
-              <input type="text" class="form-control" id="answer" value="?" disabled>
-            </div>
-            <div class="form-group col-md-6">
-              <label for="numGuesses">Total Attempts:</label>
-              <input type="text" class="form-control" id="numGuesses" value="0" disabled>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-12">
-              <button id="button" onclick="resetGuessBoxes()" class="btn btn-outline-danger w-100">Reset Game</button>
-            </div>
-          </div>
-        </form>
-      </div>
+        <header class="card-header">Results</header>
+        <div class="card-body">
+            <form class="form">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="answer">Mystery Number:</label>
+                        <input type="text" class="form-control" id="answer" value="?" disabled>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="numGuesses">Total Attempts:</label>
+                        <input type="text" class="form-control" id="numGuesses" value="0" disabled>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <button id="button" onclick="resetGuessBoxes()" class="btn btn-outline-danger w-100">Reset
+                            Game
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 
-  </div>
+</div>
 
-  <!-- JS -->
-  <script>
-    window.onload = function() {
-      var mysteryNumber = generate();
-      var numGuesses = 0;
-      document.getElementById('guessingForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        numGuesses += 1;
-        userInput(numGuesses, mysteryNumber);
-      });
+<!-- JS -->
+<script>
+    window.onload = function () {
+        var mysteryNumber = generate();
+        var numGuesses = 0;
+        document.getElementById('guessingForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            numGuesses += 1;
+            userInput(numGuesses, mysteryNumber);
+        });
     }
 
     function generate() {
-      const min = 1;
-      const max = 100;
-      const mysteryNumber = Math.floor(Math.random() * (max + 1 - min)) + min;
-      return mysteryNumber;
+        const min = 1;
+        const max = 100;
+        const mysteryNumber = Math.floor(Math.random() * (max + 1 - min)) + min;
+        return mysteryNumber;
     }
 
     function userInput(numGuesses, mysteryNumber) {
-      var guess = parseInt(document.getElementById('guess').value);
-      if (guess !== mysteryNumber) {
-        if (guess < mysteryNumber) {
-          document.getElementById('errMsgArea').classList.remove("d-none");
-          document.getElementById('errMsgArea').innerHTML = "Your guess was lower than the correct answer. You've guessed " + numGuesses + " times.";
-          document.getElementById('lastAttempt').value = (guess);
-          document.getElementById('guess').select();
-        } else if (guess > mysteryNumber) {
-          document.getElementById('errMsgArea').classList.remove("d-none");
-          document.getElementById('errMsgArea').innerHTML = "Your guess was higher than the correct answer. You've guessed " + numGuesses + " times.";
-          document.getElementById('lastAttempt').value = (guess);
-          document.getElementById('guess').select();
+        var guess = parseInt(document.getElementById('guess').value);
+        if (guess !== mysteryNumber) {
+            if (guess < mysteryNumber) {
+                document.getElementById('errMsgArea').classList.remove("d-none");
+                document.getElementById('errMsgArea').innerHTML = "Your guess was lower than the correct answer. You've guessed " + numGuesses + " times.";
+                document.getElementById('lastAttempt').value = (guess);
+                document.getElementById('guess').select();
+            } else if (guess > mysteryNumber) {
+                document.getElementById('errMsgArea').classList.remove("d-none");
+                document.getElementById('errMsgArea').innerHTML = "Your guess was higher than the correct answer. You've guessed " + numGuesses + " times.";
+                document.getElementById('lastAttempt').value = (guess);
+                document.getElementById('guess').select();
+            }
+        } else if (guess === mysteryNumber) {
+            document.getElementById('errMsgArea').classList.add("d-none");
+            document.getElementById('successErrMsgArea').classList.remove("d-none");
+            document.getElementById('successErrMsgArea').innerHTML = "Congratulations! You guessed correctly. It took you " + numGuesses + " tries.";
+            document.getElementById('answer').value = mysteryNumber;
+            document.getElementById('numGuesses').value = numGuesses;
         }
-      } else if (guess === mysteryNumber) {
-        document.getElementById('errMsgArea').classList.add("d-none");
-        document.getElementById('successErrMsgArea').classList.remove("d-none");
-        document.getElementById('successErrMsgArea').innerHTML = "Congratulations! You guessed correctly. It took you " + numGuesses + " tries.";
-        document.getElementById('answer').value = mysteryNumber;
-        document.getElementById('numGuesses').value = numGuesses;
-      }
     }
 
     // reset the boxes to original values
     function resetGuessBoxes() {
-      document.getElementById('answer').value = "?";
-      document.getElementById('numGuesses').value = "0";
+        document.getElementById('answer').value = "?";
+        document.getElementById('numGuesses').value = "0";
     }
-  </script>
+</script>
 
 </body>
 

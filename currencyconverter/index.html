@@ -2,232 +2,235 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Sandbox is a showcase of web apps built as a form of personal education/training by Christian Cleberg.">
-  <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="../favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
-  <link rel="manifest" href="../manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="../favicon/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'>
-  <title>Currency Converter | Sandbox Projects</title>
-  <style>
-    body {
-      background-color: #121212;
-      color: white
-    }
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+          content="Sandbox is a showcase of web apps built as a form of personal education/training by Christian Cleberg.">
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'>
+    <title>Currency Converter | Sandbox Projects</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: white
+        }
 
-    .card-header {
-      background-color: #202020
-    }
+        .card-header {
+            background-color: #202020
+        }
 
-    .card,
-    .navbar,
-    .breadcrumb,
-    .form-control,
-    .form-control:disabled {
-      background-color: #3b3b3b;
-      border: none;
-      color: white
-    }
+        .card,
+        .navbar,
+        .breadcrumb,
+        .form-control,
+        .form-control:disabled {
+            background-color: #3b3b3b;
+            border: none;
+            color: white
+        }
 
-    .form-control:focus {
-      background-color: #202020;
-      color: white;
-      border-color: #dc3545;
-      outline: 0;
-      box-shadow: 0 0 0 .2rem rgba(220, 53, 69, .25);
-    }
+        .form-control:focus {
+            background-color: #202020;
+            color: white;
+            border-color: #dc3545;
+            outline: 0;
+            box-shadow: 0 0 0 .2rem rgba(220, 53, 69, .25);
+        }
 
-    .breadcrumb a {
-      color: #dc3545
-    }
-  </style>
+        .breadcrumb a {
+            color: #dc3545
+        }
+    </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark text-center">
+<nav class="navbar navbar-expand-lg navbar-dark text-center">
     <a class="navbar-brand w-100" href="../">Sandbox Projects</a>
-  </nav>
+</nav>
 
-  <div class="container my-4 py-4">
+<div class="container my-4 py-4">
     <nav class="mb-5" aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="../">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Currency Converter</li>
-      </ol>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Currency Converter</li>
+        </ol>
     </nav>
     <h1 class="text-center">Currency Converter</h1>
-    <a href="https://git.sr.ht/~cyborg/sandbox" class="h5 d-block text-center" style="color:white;text-decoration:underline;">View Source Code</a>
+    <a href="https://git.sr.ht/~cyborg/sandbox" class="h5 d-block text-center"
+       style="color:white;text-decoration:underline;">View Source Code</a>
 
     <div class="card my-4">
-      <div class="card-header">Exchange Rate</div>
-      <div class="card-body">
-        <div class="rate" id="rate"></div>
-      </div>
+        <div class="card-header">Exchange Rate</div>
+        <div class="card-body">
+            <div class="rate" id="rate"></div>
+        </div>
     </div>
 
     <form>
-      <div class="form-row">
-        <div class="col-md-6">
-          <div class="form-group">
-            <label for="from_currency">Source Currency</label>
-            <select class="form-control" id="from_currency">
-              <option value="AED">AED</option>
-              <option value="ARS">ARS</option>
-              <option value="AUD">AUD</option>
-              <option value="BGN">BGN</option>
-              <option value="BRL">BRL</option>
-              <option value="BSD">BSD</option>
-              <option value="CAD">CAD</option>
-              <option value="CHF">CHF</option>
-              <option value="CLP">CLP</option>
-              <option value="CNY">CNY</option>
-              <option value="COP">COP</option>
-              <option value="CZK">CZK</option>
-              <option value="DKK">DKK</option>
-              <option value="DOP">DOP</option>
-              <option value="EGP">EGP</option>
-              <option value="EUR">EUR</option>
-              <option value="FJD">FJD</option>
-              <option value="GBP">GBP</option>
-              <option value="GTQ">GTQ</option>
-              <option value="HKD">HKD</option>
-              <option value="HRK">HRK</option>
-              <option value="HUF">HUF</option>
-              <option value="IDR">IDR</option>
-              <option value="ILS">ILS</option>
-              <option value="INR">INR</option>
-              <option value="ISK">ISK</option>
-              <option value="JPY">JPY</option>
-              <option value="KRW">KRW</option>
-              <option value="KZT">KZT</option>
-              <option value="MXN">MXN</option>
-              <option value="MYR">MYR</option>
-              <option value="NOK">NOK</option>
-              <option value="NZD">NZD</option>
-              <option value="PAB">PAB</option>
-              <option value="PEN">PEN</option>
-              <option value="PHP">PHP</option>
-              <option value="PKR">PKR</option>
-              <option value="PLN">PLN</option>
-              <option value="PYG">PYG</option>
-              <option value="RON">RON</option>
-              <option value="RUB">RUB</option>
-              <option value="SAR">SAR</option>
-              <option value="SEK">SEK</option>
-              <option value="SGD">SGD</option>
-              <option value="THB">THB</option>
-              <option value="TRY">TRY</option>
-              <option value="TWD">TWD</option>
-              <option value="UAH">UAH</option>
-              <option value="USD" selected>USD</option>
-              <option value="UYU">UYU</option>
-              <option value="VND">VND</option>
-              <option value="ZAR">ZAR</option>
-            </select>
-          </div>
+        <div class="form-row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="from_currency">Source Currency</label>
+                    <select class="form-control" id="from_currency">
+                        <option value="AED">AED</option>
+                        <option value="ARS">ARS</option>
+                        <option value="AUD">AUD</option>
+                        <option value="BGN">BGN</option>
+                        <option value="BRL">BRL</option>
+                        <option value="BSD">BSD</option>
+                        <option value="CAD">CAD</option>
+                        <option value="CHF">CHF</option>
+                        <option value="CLP">CLP</option>
+                        <option value="CNY">CNY</option>
+                        <option value="COP">COP</option>
+                        <option value="CZK">CZK</option>
+                        <option value="DKK">DKK</option>
+                        <option value="DOP">DOP</option>
+                        <option value="EGP">EGP</option>
+                        <option value="EUR">EUR</option>
+                        <option value="FJD">FJD</option>
+                        <option value="GBP">GBP</option>
+                        <option value="GTQ">GTQ</option>
+                        <option value="HKD">HKD</option>
+                        <option value="HRK">HRK</option>
+                        <option value="HUF">HUF</option>
+                        <option value="IDR">IDR</option>
+                        <option value="ILS">ILS</option>
+                        <option value="INR">INR</option>
+                        <option value="ISK">ISK</option>
+                        <option value="JPY">JPY</option>
+                        <option value="KRW">KRW</option>
+                        <option value="KZT">KZT</option>
+                        <option value="MXN">MXN</option>
+                        <option value="MYR">MYR</option>
+                        <option value="NOK">NOK</option>
+                        <option value="NZD">NZD</option>
+                        <option value="PAB">PAB</option>
+                        <option value="PEN">PEN</option>
+                        <option value="PHP">PHP</option>
+                        <option value="PKR">PKR</option>
+                        <option value="PLN">PLN</option>
+                        <option value="PYG">PYG</option>
+                        <option value="RON">RON</option>
+                        <option value="RUB">RUB</option>
+                        <option value="SAR">SAR</option>
+                        <option value="SEK">SEK</option>
+                        <option value="SGD">SGD</option>
+                        <option value="THB">THB</option>
+                        <option value="TRY">TRY</option>
+                        <option value="TWD">TWD</option>
+                        <option value="UAH">UAH</option>
+                        <option value="USD" selected>USD</option>
+                        <option value="UYU">UYU</option>
+                        <option value="VND">VND</option>
+                        <option value="ZAR">ZAR</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="from_amount">Source Amount</label>
+                    <input class="form-control" type="text" id="from_amount" placeholder="0" value=1>
+                </div>
+            </div>
         </div>
-        <div class="col-md-6">
-          <div class="form-group">
-            <label for="from_amount">Source Amount</label>
-            <input class="form-control" type="text" id="from_amount" placeholder="0" value=1>
-          </div>
-        </div>
-      </div>
 
-      <div class="w-100">
-        <button class="btn btn-outline-danger w-100 my-3" id="exchange"><i class="fas fa-exchange-alt"></i></button>
-      </div>
+        <div class="w-100">
+            <button class="btn btn-outline-danger w-100 my-3" id="exchange"><i class="fas fa-exchange-alt"></i></button>
+        </div>
 
-      <div class="form-row">
-        <div class="col-md-6">
-          <div class="form-group">
-            <label for="to_currency">Destination Currency</label>
-            <select class="form-control" id="to_currency">
-              <option value="AED">AED</option>
-              <option value="ARS">ARS</option>
-              <option value="AUD">AUD</option>
-              <option value="BGN">BGN</option>
-              <option value="BRL">BRL</option>
-              <option value="BSD">BSD</option>
-              <option value="CAD">CAD</option>
-              <option value="CHF">CHF</option>
-              <option value="CLP">CLP</option>
-              <option value="CNY">CNY</option>
-              <option value="COP">COP</option>
-              <option value="CZK">CZK</option>
-              <option value="DKK">DKK</option>
-              <option value="DOP">DOP</option>
-              <option value="EGP">EGP</option>
-              <option value="EUR">EUR</option>
-              <option value="FJD">FJD</option>
-              <option value="GBP">GBP</option>
-              <option value="GTQ">GTQ</option>
-              <option value="HKD">HKD</option>
-              <option value="HRK">HRK</option>
-              <option value="HUF">HUF</option>
-              <option value="IDR">IDR</option>
-              <option value="ILS">ILS</option>
-              <option value="INR">INR</option>
-              <option value="ISK">ISK</option>
-              <option value="JPY">JPY</option>
-              <option value="KRW">KRW</option>
-              <option value="KZT">KZT</option>
-              <option value="MXN">MXN</option>
-              <option value="MYR">MYR</option>
-              <option value="NOK">NOK</option>
-              <option value="NZD">NZD</option>
-              <option value="PAB">PAB</option>
-              <option value="PEN">PEN</option>
-              <option value="PHP">PHP</option>
-              <option value="PKR" selected>PKR</option>
-              <option value="PLN">PLN</option>
-              <option value="PYG">PYG</option>
-              <option value="RON">RON</option>
-              <option value="RUB">RUB</option>
-              <option value="SAR">SAR</option>
-              <option value="SEK">SEK</option>
-              <option value="SGD">SGD</option>
-              <option value="THB">THB</option>
-              <option value="TRY">TRY</option>
-              <option value="TWD">TWD</option>
-              <option value="UAH">UAH</option>
-              <option value="USD">USD</option>
-              <option value="UYU">UYU</option>
-              <option value="VND">VND</option>
-              <option value="ZAR">ZAR</option>
-            </select>
-          </div>
+        <div class="form-row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="to_currency">Destination Currency</label>
+                    <select class="form-control" id="to_currency">
+                        <option value="AED">AED</option>
+                        <option value="ARS">ARS</option>
+                        <option value="AUD">AUD</option>
+                        <option value="BGN">BGN</option>
+                        <option value="BRL">BRL</option>
+                        <option value="BSD">BSD</option>
+                        <option value="CAD">CAD</option>
+                        <option value="CHF">CHF</option>
+                        <option value="CLP">CLP</option>
+                        <option value="CNY">CNY</option>
+                        <option value="COP">COP</option>
+                        <option value="CZK">CZK</option>
+                        <option value="DKK">DKK</option>
+                        <option value="DOP">DOP</option>
+                        <option value="EGP">EGP</option>
+                        <option value="EUR">EUR</option>
+                        <option value="FJD">FJD</option>
+                        <option value="GBP">GBP</option>
+                        <option value="GTQ">GTQ</option>
+                        <option value="HKD">HKD</option>
+                        <option value="HRK">HRK</option>
+                        <option value="HUF">HUF</option>
+                        <option value="IDR">IDR</option>
+                        <option value="ILS">ILS</option>
+                        <option value="INR">INR</option>
+                        <option value="ISK">ISK</option>
+                        <option value="JPY">JPY</option>
+                        <option value="KRW">KRW</option>
+                        <option value="KZT">KZT</option>
+                        <option value="MXN">MXN</option>
+                        <option value="MYR">MYR</option>
+                        <option value="NOK">NOK</option>
+                        <option value="NZD">NZD</option>
+                        <option value="PAB">PAB</option>
+                        <option value="PEN">PEN</option>
+                        <option value="PHP">PHP</option>
+                        <option value="PKR" selected>PKR</option>
+                        <option value="PLN">PLN</option>
+                        <option value="PYG">PYG</option>
+                        <option value="RON">RON</option>
+                        <option value="RUB">RUB</option>
+                        <option value="SAR">SAR</option>
+                        <option value="SEK">SEK</option>
+                        <option value="SGD">SGD</option>
+                        <option value="THB">THB</option>
+                        <option value="TRY">TRY</option>
+                        <option value="TWD">TWD</option>
+                        <option value="UAH">UAH</option>
+                        <option value="USD">USD</option>
+                        <option value="UYU">UYU</option>
+                        <option value="VND">VND</option>
+                        <option value="ZAR">ZAR</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="to_amount">Destination Amount</label>
+                    <input class="form-control" type="text" id="to_amount" placeholder="0" disabled>
+                </div>
+            </div>
         </div>
-        <div class="col-md-6">
-          <div class="form-group">
-            <label for="to_amount">Destination Amount</label>
-            <input class="form-control" type="text" id="to_amount" placeholder="0" disabled>
-          </div>
-        </div>
-      </div>
     </form>
 
-  </div>
+</div>
 
-  <!-- JS -->
-  <script>
+<!-- JS -->
+<script>
     const from_currencyEl = document.getElementById('from_currency');
     const from_amountEl = document.getElementById('from_amount');
     const to_currencyEl = document.getElementById('to_currency');
@@ -241,28 +244,28 @@
     to_amountEl.addEventListener('input', calculate);
 
     exchange.addEventListener('click', (e) => {
-      e.preventDefault();
-      const temp = from_currencyEl.value;
-      from_currencyEl.value = to_currencyEl.value;
-      to_currencyEl.value = temp;
-      calculate();
+        e.preventDefault();
+        const temp = from_currencyEl.value;
+        from_currencyEl.value = to_currencyEl.value;
+        to_currencyEl.value = temp;
+        calculate();
     });
 
     function calculate() {
-      const from_currency = from_currencyEl.value;
-      const to_currency = to_currencyEl.value;
+        const from_currency = from_currencyEl.value;
+        const to_currency = to_currencyEl.value;
 
-      fetch(`https://api.exchangerate-api.com/v4/latest/${from_currency}`)
-        .then(res => res.json())
-        .then(res => {
-          const rate = res.rates[to_currency];
-          rateEl.innerText = `1 ${from_currency} = ${rate} ${to_currency}`
-          to_amountEl.value = (from_amountEl.value * rate).toFixed(2);
-        })
+        fetch(`https://api.exchangerate-api.com/v4/latest/${from_currency}`)
+            .then(res => res.json())
+            .then(res => {
+                const rate = res.rates[to_currency];
+                rateEl.innerText = `1 ${from_currency} = ${rate} ${to_currency}`
+                to_amountEl.value = (from_amountEl.value * rate).toFixed(2);
+            })
     }
 
     calculate();
-  </script>
+</script>
 
 </body>
 

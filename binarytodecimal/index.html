@@ -2,142 +2,145 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Sandbox is a showcase of web apps built as a form of personal education/training by Christian Cleberg.">
-  <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="../favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
-  <link rel="manifest" href="../manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="../favicon/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <title>Binary to Decimal | Sandbox Projects</title>
-  <style>
-    body {
-      background-color: #121212;
-      color: white
-    }
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+          content="Sandbox is a showcase of web apps built as a form of personal education/training by Christian Cleberg.">
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Binary to Decimal | Sandbox Projects</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: white
+        }
 
-    .card,
-    .navbar,
-    .breadcrumb {
-      background-color: #3b3b3b;
-      border: none;
-      color: white
-    }
+        .card,
+        .navbar,
+        .breadcrumb {
+            background-color: #3b3b3b;
+            border: none;
+            color: white
+        }
 
-    .form-control {
-      background-color: #202020;
-      color: white;
-      border: none
-    }
+        .form-control {
+            background-color: #202020;
+            color: white;
+            border: none
+        }
 
-    .form-control:focus {
-      background-color: #202020;
-      color: white;
-      border-color: #dc3545;
-      outline: 0;
-      box-shadow: 0 0 0 .2rem rgba(220, 53, 69, .25);
-    }
+        .form-control:focus {
+            background-color: #202020;
+            color: white;
+            border-color: #dc3545;
+            outline: 0;
+            box-shadow: 0 0 0 .2rem rgba(220, 53, 69, .25);
+        }
 
-    .breadcrumb a {
-      color: #dc3545
-    }
-  </style>
+        .breadcrumb a {
+            color: #dc3545
+        }
+    </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark text-center">
+<nav class="navbar navbar-expand-lg navbar-dark text-center">
     <a class="navbar-brand w-100" href="../">Sandbox Projects</a>
-  </nav>
+</nav>
 
-  <div class="container my-4 py-4">
+<div class="container my-4 py-4">
     <nav class="mb-5" aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="../">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Binary to Decimal Converter</li>
-      </ol>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Binary to Decimal Converter</li>
+        </ol>
     </nav>
     <h1 class="text-center">Binary to Decimal Converter</h1>
-    <a href="https://git.sr.ht/~cyborg/sandbox" class="h5 d-block text-center" style="color:white;text-decoration:underline;">View Source Code</a>
+    <a href="https://git.sr.ht/~cyborg/sandbox" class="h5 d-block text-center"
+       style="color:white;text-decoration:underline;">View Source Code</a>
 
     <div class="card my-4">
-      <div class="card-body">
-        <form id="binaryForm">
-          <label for="binaryInput">Binary Input</label>
-          <div class="d-flex">
-            <input type="text" class="form-control flex-fill mr-2" id="binaryInput">
-            <button class="btn btn-outline-danger" type="submit">Convert</button>
-          </div>
-        </form>
-      </div>
+        <div class="card-body">
+            <form id="binaryForm">
+                <label for="binaryInput">Binary Input</label>
+                <div class="d-flex">
+                    <input type="text" class="form-control flex-fill mr-2" id="binaryInput">
+                    <button class="btn btn-outline-danger" type="submit">Convert</button>
+                </div>
+            </form>
+        </div>
     </div>
     <div id="resultAlert" class="alert alert-success d-none" role="alert"></div>
-  </div>
+</div>
 
-  <!-- JS -->
-  <script>
-    document.getElementById("binaryForm").addEventListener("submit", function(event) {
-      // Prevent the form from submitting, we want to stay on the same page
-      event.preventDefault();
-      // Get the input box and its value
-      var input = document.getElementById("binaryInput");
-      var inputValue = document.getElementById("binaryInput").value;
-      // Check to make sure the input is valid
-      var valid = checkInput();
-      // Perform conversion only if the input is valid
-      if (valid === true) {
-        // Get the decimal value
-        var decimal = convert(inputValue);
-        // Create a result alert
-        var resultAlert = document.getElementById("resultAlert");
-        resultAlert.classList.remove("d-none");
-        resultAlert.innerHTML = "<strong>Result:</strong> " + decimal;
-      }
+<!-- JS -->
+<script>
+    document.getElementById("binaryForm").addEventListener("submit", function (event) {
+        // Prevent the form from submitting, we want to stay on the same page
+        event.preventDefault();
+        // Get the input box and its value
+        var input = document.getElementById("binaryInput");
+        var inputValue = document.getElementById("binaryInput").value;
+        // Check to make sure the input is valid
+        var valid = checkInput();
+        // Perform conversion only if the input is valid
+        if (valid === true) {
+            // Get the decimal value
+            var decimal = convert(inputValue);
+            // Create a result alert
+            var resultAlert = document.getElementById("resultAlert");
+            resultAlert.classList.remove("d-none");
+            resultAlert.innerHTML = "<strong>Result:</strong> " + decimal;
+        }
     });
 
     function checkInput() {
-      var input = document.getElementById("binaryInput");
-      var inputValue = document.getElementById("binaryInput").value;
-      var result = true;
-      for (var i = 0; i < inputValue.length; i++) {
-        if (inputValue[i] == 0 || inputValue[i] == 1) {
-          result = true;
-        } else {
-          result = false;
+        var input = document.getElementById("binaryInput");
+        var inputValue = document.getElementById("binaryInput").value;
+        var result = true;
+        for (var i = 0; i < inputValue.length; i++) {
+            if (inputValue[i] == 0 || inputValue[i] == 1) {
+                result = true;
+            } else {
+                result = false;
+            }
         }
-      }
-      if (result === false) {
-        input.classList.remove("is-valid");
-        input.classList.add("is-invalid");
-      } else {
-        input.classList.remove("is-invalid");
-        input.classList.add("is-valid");
-      }
-      return result;
+        if (result === false) {
+            input.classList.remove("is-valid");
+            input.classList.add("is-invalid");
+        } else {
+            input.classList.remove("is-invalid");
+            input.classList.add("is-valid");
+        }
+        return result;
     }
 
     function convert(bin) {
-      var decimal = 0;
-      for (var i = bin.length - 1; i >= 0; i--) {
-        decimal += parseInt(bin[i]) * Math.pow(2, bin.length - 1 - i)
-      }
-      return decimal;
+        var decimal = 0;
+        for (var i = bin.length - 1; i >= 0; i--) {
+            decimal += parseInt(bin[i]) * Math.pow(2, bin.length - 1 - i)
+        }
+        return decimal;
     }
-  </script>
+</script>
 
 </body>
 
