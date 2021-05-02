@@ -2,17 +2,13 @@
 
 A simple way to get your photos up onto a dynamic PHP photo gallery.
 
-## Environment
-
-[View the website here.](https://cleberg.io/sandbox/php-photos/)
-
-### Requirements
+## Requirements
 
 1. A hosting provider such as Namecheap that allows you to server dynamic websites. GitHub/GitLab pages will not work
    since PHP is a backend language that won't work with static hosting.
 2. The permissions/ability to create folders and files on your hosting provider's server.
 
-### Instructions
+## Instructions
 
 Here's the fastest way to get started:
 
